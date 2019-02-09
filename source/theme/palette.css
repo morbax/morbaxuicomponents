@@ -1,0 +1,22 @@
+:root {
+    /* HEX */
+    --paletteColor1: #000;
+    --MineShaft: #333333;
+    --White: #ffffff;
+    --Alabaster: #F9F9F9;
+    --BlueBell: #99A2CD;
+    --BrightSun: #FECB45;
+    --Valencia: #D73649;
+    --MountainMeadow: #0FBFA5;
+    --Victoria: #4e4c93;
+    --Deluge: #835ead;
+    --Purple: #6000B4;
+
+    /* RGBA */
+    --rgbaColor1: rgba(0, 0, 0, 0.1);
+    --Boulder: rgba(125, 125, 125, 0.5);
+
+    /* Gradients */
+    --gradient1: linear-gradient(var(--paletteColor1), var(--paletteColor1));
+    --navGradient: linear-gradient(132deg, var(--Deluge), var(--Victoria));
+}

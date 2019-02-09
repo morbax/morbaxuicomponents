@@ -1,0 +1,14 @@
+@import '../../theme/palette.css';
+
+nav {
+    width: 140px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    box-shadow: 0 0 6px -1px var(--Boulder);
+
+    & div {
+        padding: 17px 0 15px;
+        text-align: center;
+      }
+}

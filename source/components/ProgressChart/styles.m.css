@@ -1,0 +1,31 @@
+.radar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    width: fit-content;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+.figure {
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+.wrapper {
+    position: absolute;
+    top: 10px;
+}
+.label {
+    width: 100%;
+    margin-top: 7px;
+    text-align: center;
+}
+.left {
+    padding-left: 10px;
+    text-align: left;
+}
