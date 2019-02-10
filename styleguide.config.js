@@ -8,11 +8,11 @@ module.exports = {
                 {
                     test:    /\.js?$/,
                     exclude: /node_modules/,
-                    loader:  'babel-loader'
+                    loader:  'babel-loader',
                 },
                 {
                     test:   /\.css$/,
-                    loader: 'style-loader!css-loader?modules'
+                    loader: 'style-loader!css-loader?modules',
                 },
                 {
                     test: /\.jpe?g|png|svg$/,
@@ -30,11 +30,19 @@ module.exports = {
     }),
     sections: [
         {
+            name:       'Cards',
+            components: [
+                './source/components/StatisticCard/index.js'
+            ],
+            exampleMode: 'expand',
+            usageMode:   'collapse',
+        },
+        {
             name:       'Charts',
             components: [
                 './source/components/RadarChart/index.js',
                 './source/components/ProgressChart/index.js',
-                './source/components/FunnelChart/index.js',
+                './source/components/FunnelChart/index.js'
             ],
             exampleMode: 'expand',
             usageMode:   'collapse',
