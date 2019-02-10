@@ -6,17 +6,17 @@ module.exports = {
         module: {
             rules: [
                 {
-                    test: /\.js?$/,
+                    test:    /\.js?$/,
                     exclude: /node_modules/,
-                    loader: 'babel-loader'
+                    loader:  'babel-loader'
                 },
                 {
-                    test: /\.css$/,
+                    test:   /\.css$/,
                     loader: 'style-loader!css-loader?modules'
                 },
                 {
-                    test:    /\.jpe?g|png|svg$/,
-                    use:     {
+                    test: /\.jpe?g|png|svg$/,
+                    use:  {
                         loader:  'url-loader',
                         options: {
                             fallback: 'file-loader',
@@ -24,42 +24,39 @@ module.exports = {
                             name:     'images/[name].[hash:5].[ext]',
                         },
                     },
-                },
-            ]
-        }
+                }
+            ],
+        },
     }),
     sections: [
         {
-            name: 'd3.js Charts',
+            name:       'Charts',
             components: [
                 './source/components/RadarChart/index.js',
                 './source/components/ProgressChart/index.js',
                 './source/components/FunnelChart/index.js',
             ],
             exampleMode: 'expand',
-    		    usageMode: 'expand',
+            usageMode:   'collapse',
         }
     ],
     theme: {
-        color: {
-            link: '#fff',
-            linkHover: '#aaa',
-            sidebarBackground: '#5a59ca',
+        sidebarWidth: 300,
+        color:        {
+            link:              '#fff',
+            linkHover:         '#a4a4a4',
+            sidebarBackground: '#5e5cce',
+            border:            '#5e5cce',
         },
         fontFamily: {
-            base: 'monospace'
-        }
+            base: 'monospace',
+        },
     },
     styles: {
         Logo: {
-            // We're changing the LogoRenderer component
             logo: {
                 color: '#fff',
-                animation: 'blink ease-in-out 300ms infinite'
             },
-            '@keyframes blink': {
-                to: { opacity: 0 }
-            }
-        }
-    }
+        },
+    },
 };
