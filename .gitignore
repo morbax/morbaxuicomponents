@@ -1,6 +1,7 @@
 # == Core ==
 
 node_modules/
+/build
 coverage/
 flow-coverage/
 
