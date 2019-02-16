@@ -34,7 +34,7 @@ module.exports = {
             components: [
                 './source/components/StatisticCard/index.js'
             ],
-            exampleMode: 'expand',
+            exampleMode: 'collapse',
             usageMode:   'collapse',
         },
         {
@@ -44,7 +44,7 @@ module.exports = {
                 './source/components/ProgressChart/index.js',
                 './source/components/FunnelChart/index.js'
             ],
-            exampleMode: 'expand',
+            exampleMode: 'collapse',
             usageMode:   'collapse',
         }
     ],
